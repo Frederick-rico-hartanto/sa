@@ -1,0 +1,101 @@
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import the Roboto font
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+   */
+
+
+  /* Global Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #8B0000;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  button {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+
+  /* LoginPage.css or global.css */
+
+/* Container for the whole login page */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8B0000; /* Red background */
+  }
+  
+  /* Styling for the login form */
+  .login-form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Zyrex logo styling */
+  .login-logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling */
+  .login-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+  }
+  
+  /* Input field styling */
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Button styling */
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #32CD32; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+  }
+  

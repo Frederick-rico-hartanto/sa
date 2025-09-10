@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es6",  // Updated from "es5" to "es6" for better modern JS support
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+        "@components/*": ["./components/*"],
+        "@modules/*": ["./Modules/*"],  // Make sure the folder is correctly named and matched in imports
+        "@assets/*": ["./assets/*"],
+        "@styles/*": ["./styles/*"],
+        "@pages/*": ["./pages/*"],
+        "@layouts/*": ["components/layouts/*"],
+        "@molecules/*": ["components/molecules/*"],
+    },
+    "incremental": true,
+    "strictNullChecks": true // Added strict null checks for better type safety
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next"  // Excluded Next.js build folder for cleaner build and type checking
+  ]
+}
